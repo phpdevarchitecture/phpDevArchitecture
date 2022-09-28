@@ -1,6 +1,6 @@
 <?
 
-class EntityItem {
+class EntityItem  extends Users {
   private $itemTypes=array("string","int","decimal","bigInt","float","double","char","text","byte","boolean","date","time","dateTime");
   private $name="";
   private $columnName="";
@@ -14,14 +14,14 @@ class EntityItem {
   private $isUnique=false;
   private $response->success=true;
   private $response->errors=array();
-  public $users=new Users();
+
 
    function EntityItem($pName,$pColumnName,$pType,$pLength) {
-     this-users->admin=new UserType(true,true,true,true);
-     this-users->editor=new UserType(true,true,true,true);
-     this-users->moderator=new UserType(true,true,true,true);
-     this-users->guest=new UserType(true,true,true,true);
-     this-users->owner=new UserType(true,true,true,true);
+     this->admin=new UserType(true,true,true,true);
+     this->editor=new UserType(true,true,true,true);
+     this->moderator=new UserType(true,true,true,true);
+     this->guest=new UserType(true,true,true,true);
+     this->owner=new UserType(true,true,true,true);
      this->response->success=true;
      this->response->errors=array();
      if(this->checkName($pName)==false){
