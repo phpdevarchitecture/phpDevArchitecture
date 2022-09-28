@@ -6,6 +6,7 @@ include("systemfiles/upload.php");
 include("systemfiles/imageload.php");
 include('core/entity/entityItem.php');
 include('core/UserEntity/userType.php');
+include('core/UserEntity/users.php');
 $api=get("api");
 
 $modul="";
