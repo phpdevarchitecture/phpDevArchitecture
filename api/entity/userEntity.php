@@ -20,7 +20,5 @@ class User extends Users {
      this->password->moderator.setPermission(true,true,false,false);
      this->password->guest.setPermission(false,false,false,false);
    }
-
-
 }
 ?>
