@@ -7,15 +7,19 @@ include("systemfiles/imageload.php");
 include('core/entity/entityItem.php');
 include('core/UserEntity/userType.php');
 include('core/UserEntity/users.php');
-$api=get("api");
 
+//user session,token or cookiee control
+include("userAuthentication/checkUserAuthentication.php");
+
+
+$api=get("api");
 $modul="";
 $action="";
 $apipart=explode("_",$api);
 $modul=$apipart[0];
 $action=$apipart[1];
 $moduleRouting=true;
-//modul klasör ve dosyalarının otomatik oluşturulması
+//modul folder and file structures outomatic construction
 if($modul=="generateModul") include("core/moduleGenerator/generate.php");
 if($moduleRouting){
   include("moduls/$modul/controllers/index.php");
