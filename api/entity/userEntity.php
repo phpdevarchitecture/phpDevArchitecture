@@ -12,7 +12,7 @@ class User {
      this->username->usertype->moderator.setPermission(true,true,true,false);
      this->password->usertype->owner.setPermission(false,true,true,false);
      this->password->usertype->moderator.setPermission(true,true,false,false);
-     this->password->usertype->guest.setPermission(true,true,false,false);
+     this->password->usertype->guest.setPermission(false,false,false,false);
    }
 
 
