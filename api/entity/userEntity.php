@@ -8,11 +8,11 @@ class User {
 
 
    function User() {
-     this-users->admin=new UserType(true,true,true,true);
-     this-users->editor=new UserType(true,true,true,true);
-     this-users->moderator=new UserType(true,true,true,true);
-     this-users->guest=new UserType(true,true,true,true);
-     this-users->owner=new UserType(true,true,true,true);
+     this-users->admin.setPermission(true,true,true,true);
+     this-users->editor.setPermission(true,true,true,true);
+     this-users->moderator.setPermission(true,true,true,true);
+     this-users->guest.setPermission(true,true,true,true);
+     this-users->owner.setPermission(true,true,true,true);
 
      this->username->setIsNull(false);
      this->username->setIsUnique(true);
