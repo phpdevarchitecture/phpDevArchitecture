@@ -14,12 +14,14 @@ class EntityItem {
   private $isUnique=false;
   private $response->success=true;
   private $response->errors=array();
-  public $userType->admin=new UserType(true,true,true,true);
-  public $userType->editor=new UserType(true,true,true,true);
-  public $userType->moderator=new UserType(true,true,true,true);
-  public $userType->guest=new UserType(false,false,true,false);
-  public $userType->owner=new UserType(true,true,true,true);
+  public $users=new Users();
+
    function EntityItem($pName,$pColumnName,$pType,$pLength) {
+     this-users->admin=new UserType(true,true,true,true);
+     this-users->editor=new UserType(true,true,true,true);
+     this-users->moderator=new UserType(true,true,true,true);
+     this-users->guest=new UserType(true,true,true,true);
+     this-users->owner=new UserType(true,true,true,true);
      this->response->success=true;
      this->response->errors=array();
      if(this->checkName($pName)==false){
