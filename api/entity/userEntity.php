@@ -11,7 +11,7 @@ class User {
      this-users->admin.setPermission(true,true,true,true);
      this-users->editor.setPermission(true,true,true,true);
      this-users->moderator.setPermission(true,true,true,true);
-     this-users->guest.setPermission(true,true,true,true);
+     this-users->guest.setPermission(false,false,true,false);
      this-users->owner.setPermission(true,true,true,true);
 
      this->username->setIsNull(false);
