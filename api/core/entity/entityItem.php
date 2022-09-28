@@ -1,5 +1,5 @@
 <?
-require_once('core/UserEntity/userType.php');
+
 class EntityItem {
   private $itemTypes=array("string","int","decimal","bigInt","float","double","char","text","byte","boolean","date","time","dateTime");
   private $name="";
