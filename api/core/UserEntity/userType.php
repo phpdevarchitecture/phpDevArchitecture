@@ -11,7 +11,7 @@ class UserType {
       if($pRead) this->canRead=true; else this->canRead=false;
       if($pDelete) this->canDelete=true; else this->canDelete=false;
     }
-    function setPermision($pCreate,$pUpdate,$pRead,$pDelete){
+    function setPermission($pCreate,$pUpdate,$pRead,$pDelete){
 
       if($pCreate) this->canCreate=true; else this->canCreate=false;
       if($pUpdate) this->canUpdate=true; else this->canUpdate=false;
