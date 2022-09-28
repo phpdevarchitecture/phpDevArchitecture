@@ -1,5 +1,5 @@
 <?
-require_once('core/userEntity.php');
+require_once('core/entity/entityItem.php');
 class User {
   private $id=new EntityItem("id","id","int","0");
   private $username=new EntityItem("username","username","string","50");
