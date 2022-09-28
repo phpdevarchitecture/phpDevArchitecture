@@ -4,6 +4,7 @@ include("systemfiles/phpfunctions.php");
 include("systemfiles/connect.php");
 include("systemfiles/upload.php");
 include("systemfiles/imageload.php");
+include('core/entity/entityItem.php');
 include('core/UserEntity/userType.php');
 $api=get("api");
 
