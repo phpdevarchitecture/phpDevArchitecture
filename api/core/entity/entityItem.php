@@ -1,4 +1,5 @@
 <?
+require_once('core/UserEntity/userType.php');
 class EntityItem {
   private $itemTypes=array("string","int","decimal","bigInt","float","double","char","text","byte","boolean","date","time","dateTime");
   private $name="";
@@ -17,7 +18,7 @@ class EntityItem {
   public $userType->editor=new UserType(true,true,true,true);
   public $userType->moderator=new UserType(true,true,true,true);
   public $userType->guest=new UserType(false,false,true,false);
-  public $userType->owner=new UserType(true,true,true,true);  
+  public $userType->owner=new UserType(true,true,true,true);
    function EntityItem($pName,$pColumnName,$pType,$pLength) {
      this->response->success=true;
      this->response->errors=array();
