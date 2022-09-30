@@ -1,16 +1,27 @@
-<?
-class Users {
-  public $admin=new UserType(true,true,true,true);
-  public $editor=new UserType(true,true,true,true);
-  public $moderator=new UserType(true,true,true,true);
-  public $guest=new UserType(false,false,true,false);
-  public $owner=new UserType(true,true,true,true);
-  function Users(){
-
-  }
-}
-?>
-//Usertype($pCreate,$pUpdate,$pRead,$pDelete);
-
-
-?>
+<?
+class Users {
+
+  public $admin;
+  public $editor;
+  public $moderator;
+  public $guest;
+  public $owner;
+  public function __construct(){
+    $this->admin=new UserType(true,true,true,true);
+    $this->editor=new UserType(true,true,true,true);
+    $this->moderator=new UserType(true,true,true,true);
+    $this->guest=new UserType(false,false,true,false);
+    $this->owner=new UserType(true,true,true,true);
+  }
+  public function setUsers(){
+    $this->admin=new UserType(true,true,true,true);
+    $this->editor=new UserType(true,true,true,true);
+    $this->moderator=new UserType(true,true,true,true);
+    $this->guest=new UserType(false,false,true,false);
+    $this->owner=new UserType(true,true,true,true);
+  }
+
+
+
+}
+?>
