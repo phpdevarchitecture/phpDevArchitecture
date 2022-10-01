@@ -9,7 +9,6 @@ class Mapper {
   public function mapEntity($mapData){
     $myJSON = json_encode($mapData);
 
-    echo $myJSON;
   }
 }
 ?>

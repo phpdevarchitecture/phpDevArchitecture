@@ -101,7 +101,7 @@ class EntityItem  extends Users {
    }
   public function getName(){
 
-    return $this->name."adasdsa";
+    return $this->name;
   }
 }
 ?>

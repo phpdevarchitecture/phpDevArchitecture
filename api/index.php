@@ -24,7 +24,6 @@ $modul=$apipart[0];
 $action=$apipart[1];
 $moduleRouting=true;
 //modul folder and file structures outomatic construction
-echo $modul;
 if($modul=="generateModul") include("core/moduleGenerator/generate.php");
 if($moduleRouting){
   include("moduls/$modul/controllers/index.php");
