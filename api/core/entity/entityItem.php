@@ -14,6 +14,7 @@ class EntityItem  extends Users {
   public $isNull;
   public $isUnique;
   public $response;
+  public $value;
 
   public function __construct($pName,$pColumnName,$pType,$pLength) {
     $this->itemTypes=array("string","int","decimal","bigInt","float","double","char","text","byte","boolean","date","time","dateTime");
@@ -28,6 +29,7 @@ class EntityItem  extends Users {
         $this->indexable=FALSE;
         $this->isNull=TRUE;
         $this->isUnique=FALSE;
+        $this->value="";
      $this->admin=new UserType(true,true,true,true);
      $this->editor=new UserType(true,true,true,true);
      $this->moderator=new UserType(true,true,true,true);
@@ -97,6 +99,10 @@ class EntityItem  extends Users {
    }
    private function checkType($sss){
      return true;
+
+   }
+   public function setName($sValue){
+      $this->name=$sValue;
 
    }
   public function getName(){
